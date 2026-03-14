@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Data (download from Kaggle instead)
+data/US_Accidents_March23.csv
+data/sample_5000.csv
+
+# Generated outputs (optional - keep if you want to track plots)
+outputs/figures/*.png
+
+# Project specific
+summary.md

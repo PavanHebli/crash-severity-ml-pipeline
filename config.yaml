@@ -1,0 +1,73 @@
+random_state: 42
+
+data:
+  raw_path: "data/sample_5000.csv"
+  target_column: "Severity"
+
+columns:
+  to_drop:
+    - ID
+    - Start_Time
+    - End_Time
+    - Start_Lat
+    - Start_Lng
+    - End_Lat
+    - End_Lng
+    - Description
+    - Street
+    - City
+    - Country
+    - Zipcode
+    - Airport_Code
+    - Weather_Timestamp
+    - Source
+    - County
+  
+  categorical_one_hot: []
+  
+  categorical_ordinal:
+    - State
+    - Timezone
+    - Wind_Direction
+    - Weather_Condition
+    - Sunrise_Sunset
+    - Civil_Twilight
+    - Nautical_Twilight
+    - Astronomical_Twilight
+  
+  boolean:
+    - Amenity
+    - Bump
+    - Crossing
+    - Give_Way
+    - Junction
+    - No_Exit
+    - Railway
+    - Roundabout
+    - Station
+    - Stop
+    - Traffic_Calming
+    - Traffic_Signal
+    - Turning_Loop
+  
+  numerical:
+    - Distance(mi)
+    - Temperature(F)
+    - Wind_Chill(F)
+    - Humidity(%)
+    - Pressure(in)
+    - Visibility(mi)
+    - Wind_Speed(mph)
+    - Precipitation(in)
+
+feature_selection:
+  top_n: 12
+
+plots:
+  dpi: 300
+  figure_width: 12
+  figure_height: 6
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
