@@ -36,6 +36,7 @@ data/sample_5000.csv
 
 # Generated outputs (optional - keep if you want to track plots)
 outputs/figures/*.png
+!outputs/figures/.gitkeep
 
 # Project specific
 summary.md
